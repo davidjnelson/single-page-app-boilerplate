@@ -1,7 +1,7 @@
 Single Page App Boilerplate
 ===========================
 
-Single Page App Boilerplate allows you to create single page apps quickly using standard best practices such as 
+Single Page App Boilerplate allows you to create [single page apps](http://en.wikipedia.org/wiki/Single-page_application) quickly using standard best practices such as 
 test driven development, javascript dependency management, continuous integration, and continuous deployment.
 
 Out of the box it sets up the requirejs dependency management system, so you don't have to cram all your code into large, unreadable files, or use globally scoped namespaces tied to a specific loading order for your code.
