@@ -10,7 +10,11 @@ With one command, your css and javascript files will be concatenated and minifie
 
 Run jasmine with one command via the jasmine-maven-plugin.  Write unit tests in jasmine, and see them pass or fail in the jasmine runner running in your favorite browser.  Debug them with your browser development tools as needed.
 
-With one command, run all your jasmine tests against a js-test-driver server to see how they work in all target browsers, such as ie-6-windows, ie-7-windows, ie-8-windows, ie-9-windows, chrome-windows, safari-windows, firefox-windows, chrome-osx, safari-osx, firefox-osx.  Your jasmine tests run without modification in js-test-driver through the usage of the jasmine-jstd-adapter.
+Single Page App Boilerplate comes with a patched version of the jasmine-maven-plugin which makes requirejs based tests work from within jasmine.
+
+With one command, run all your jasmine tests against a js-test-driver server using jstd-maven-plugin to see how they work in all target browsers, such as ie-6-windows, ie-7-windows, ie-8-windows, ie-9-windows, chrome-windows, safari-windows, firefox-windows, chrome-osx, safari-osx, firefox-osx.  Your jasmine tests run without modification in js-test-driver through the usage of the jasmine-jstd-adapter.
+
+Single Page App Boilerplate comes with a patched version of the jstd-maven-plugin which supports recursive directory globbing.  Js-test-driver will likely include this patch in their next release.  This allows you to not need to update any config files whenever you add/rename/delete javascript files.
 
 With one command, deploy your code to amazon web service's elastic beanstalk for java using either fast deployment, or the slightly slower rolling deployment which prevents service interruption using ther beanstalk-maven-plugin.  Once your app is up on elastic beanstalk, it is ideal and easy to use amazon web service's route53 dns service to map a custom domain to the cname for a cloudfront origin, using your elastic beanstalk load balancer as a custom origin.  
 
