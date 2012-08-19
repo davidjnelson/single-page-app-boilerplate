@@ -30,7 +30,7 @@ By default, backbone, handlebars, and jquery are the MVC, templating, and DOM li
 
 If you need to write server side code for your app, such as to talk to your own database or to proxy through to an external REST service, you can just write standard java servlets which will be automatically deployed to [elastic beanstalk](http://aws.amazon.com/elasticbeanstalk/).
 
-Single Page App Boilerplate runs on all platforms that java runs on as it is based on [maven](http://maven.apache.org/).
+Single Page App Boilerplate runs on all platforms that java runs on as it is based on [maven](http://maven.apache.org/), and is licensed under the MIT license.
 
 Quickstart
 ==========
