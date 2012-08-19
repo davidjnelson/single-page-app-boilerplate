@@ -32,6 +32,21 @@ If you need to write server side code for your app, such as to talk to your own 
 
 Single Page App Boilerplate runs on all platforms that java runs on as it is based on [maven](http://maven.apache.org/), and is licensed under the MIT license.
 
-Quickstart
-==========
+Getting Started
+===============
 
+* [Install maven](http://maven.apache.org/download.html) if you don't already have it.  I've used this with both maven version 2 and maven version 3, and both work.
+* Clone the repository including submodules: git clone --recursive
+* Change directory to the application-server directory
+* Start jasmine by running: mvn jasmine:bdd
+* Navigate to http://localhost:8234 in your browser to execute the included sample unit test.  Reload the page to rerun the tests.
+* Open a new command prompt / terminal and Change directory to the js-test-driver-server directory
+* Start the js-test-driver server by typing: java -jar ./js-test-driver-server.jar --port 9876
+* For each browser you want to test in, open the browser and navigate to http://localhost:9876 then click the 'Capture Browser' link.
+	* Note: in a team environment it is preferred to run the js-test-driver server on a dedicated machine, which will probably be a windows machine because that's what most end users use for an operating system. See the section titled "Setting Up Continuous Integration and Continuous Deployment" for more information.
+* Open a new command prompt / terminal and Change directory to the application-server directory
+* To run the sample unit test across all browsers you have captured, type: mvn test
+
+
+Setting Up Continuous Integration and Continuous Deployment
+===========================================================
