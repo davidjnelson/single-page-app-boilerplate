@@ -1,4 +1,1 @@
 
-[submodule "application-server/src/main/webapp"]
-	path = application-server/src/main/webapp
-	url = https://github.com/davidjnelson/html5-boilerplate

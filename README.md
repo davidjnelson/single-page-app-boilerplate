@@ -36,7 +36,7 @@ Getting Started
 ===============
 
 * [Install maven](http://maven.apache.org/download.html) if you don't already have it.  I've used this with both maven version 2 and maven version 3, and both work.
-* Clone the repository including submodules: git clone --recursive
+* Clone the repository including submodules: git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive
 * Change directory to the application-server directory
 * Start jasmine by running: mvn jasmine:bdd
 * Navigate to http://localhost:8234 in your browser to execute the included sample unit test.  Reload the page to rerun the tests.
@@ -50,3 +50,8 @@ Getting Started
 
 Setting Up Continuous Integration and Continuous Deployment
 ===========================================================
+
+
+Issues And Undoneness
+=====================
+* I'd prefer for the html5 boilerplate integration to be integrated as a git submodule.
