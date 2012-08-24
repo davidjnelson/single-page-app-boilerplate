@@ -52,6 +52,9 @@ Setting Up Continuous Integration and Continuous Deployment
 ===========================================================
 
 
-Issues And Undoneness
-=====================
-* I'd prefer for the html5 boilerplate integration to be integrated as a git submodule.
+Issues, Undoneness, And Ideas For Improvements
+==============================================
+* I'd prefer for the html5 boilerplate integration to be  as a git submodule.
+* I would like to add a maven plugin to analyze the handlebars templates and remove any css rules in the css files which are not referenced by them.
+* I would like to add twitter bootstrap pre-loaded here.
+* I would like the server to generate and return a static html representation of views for search engine crawlability.
