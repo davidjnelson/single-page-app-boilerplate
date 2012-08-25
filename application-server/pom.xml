@@ -19,6 +19,36 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>8.1.5.v20120716</version>
             </plugin>
+            <plugin>
+                <groupId>com.github.searls</groupId>
+                <artifactId>jasmine-maven-plugin</artifactId>
+                <version>1.2.0.0</version>
+
+                <extensions>true</extensions>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <specRunnerTemplate>REQUIRE_JS</specRunnerTemplate>
+                    <jsSrcDir>${project.basedir}/src/main/webapp/js</jsSrcDir>
+                    <jsTestSrcDir>${project.basedir}/src/test/specs</jsTestSrcDir>
+                    <srcDirectoryName>js</srcDirectoryName>
+                    <specDirectoryName>specs</specDirectoryName>
+                    <customRunnerConfiguration>${project.basedir}/src/test/resources/jasmineRequireJsConfig.txt</customRunnerConfiguration>
+                    <sourceIncludes>
+                        <include>**/*.js</include>
+                    </sourceIncludes>
+                    <specIncludes>
+                        <include>**/*.js</include>
+                    </specIncludes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

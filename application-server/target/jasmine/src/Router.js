@@ -1,25 +1,27 @@
 define('Router',
 [
-'3rdparty/GoogleAnalyticsRouter',
-'views/HelloWorldView'
+'jquery',
+'backbone',
+'Constants',
+'3rdparty/GoogleAnalyticsRouter'
 ],
 function
 (
-GoogleAnalyticsRouter,
-HelloWorldView
+$,
+Backbone,
+Constants,
+GoogleAnalyticsRouter
 ) {
     'use strict';
 
     return GoogleAnalyticsRouter.extend({
         initialize: function() {
             GoogleAnalyticsRouter.prototype.initialize.call(this);
-            this.helloWorldView = new HelloWorldView();
         },
         routes: {
             '': 'default'
         },
         default: function() {
-            this.helloWorldView.render();
         }
     });
 });
