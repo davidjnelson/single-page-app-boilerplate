@@ -1,16 +1,20 @@
 define('views/HelloWorldView',
 [
-'backbone'
+'backbone',
+'hbs!template/HelloWorldTemplate'
 ],
 function
 (
-Backbone
+Backbone,
+HelloWorldTemplate
 ) {
     'use strict';
 
     return Backbone.View.extend({
+        el: 'body',
         render: function() {
-            $('body').append('<div id="helloWorldDiv">Hello World</div>');
+            $(this.el).append(HelloWorldTemplate({ greeting: 'Hello World'}));
+            return this;
         }
     });
 });

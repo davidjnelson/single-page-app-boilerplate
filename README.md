@@ -52,9 +52,15 @@ Setting Up Continuous Integration and Continuous Deployment
 ===========================================================
 
 
-Issues, Undoneness, And Ideas For Improvements
-==============================================
+Issues, Undoneness, And Ideas For Improvements (Pull Requests Welcomed!!)
+=========================================================================
 * I'd prefer for the html5 boilerplate integration to be  as a git submodule.
 * I would like to add a maven plugin to analyze the handlebars templates and remove any css rules in the css files which are not referenced by them.
 * I would like to add twitter bootstrap pre-loaded here.
 * I would like the server to generate and return a static html representation of views for search engine crawlability.
+* Come up with a way to share the same dependency version mapping between main.js and jasmineRequireJsConfig.txt so its not duplicated.
+
+Have A Question Or An Idea For A New Feature?
+=============================================
+Post it to the [Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate).
+[Find me on twitter](https://twitter.com/david_j_nelson).
