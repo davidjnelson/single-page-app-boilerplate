@@ -1,24 +1,28 @@
-define('Router', [
-    'jquery',
-    'backbone'
-], function($, Backbone) {
+define('Router',
+[
+'jquery',
+'backbone',
+'Constants',
+'3rdparty/GoogleAnalyticsRouter'
+],
+function
+(
+$,
+Backbone,
+Constants,
+GoogleAnalyticsRouter
+) {
     'use strict';
 
-    return Backbone.Router.extend({
-        routes:{
-            '':  'defaultRoute'
+    return GoogleAnalyticsRouter.extend({
+        initialize: function() {
+            GoogleAnalyticsRouter.prototype.initialize.call(this);
         },
-        defaultRoute: function() {
+        routes: {
+            '': 'default'
         },
-        start: function() {
-            // IE requires the dom to be ready before calling start since it uses an iframe.
-            if($.browser.msie) {
-                $(function() {
-                    Backbone.history.start();
-                });
-            } else {
-                Backbone.history.start();
-            }
+        default: function() {
+            console.log('hello');
         }
     });
 });
