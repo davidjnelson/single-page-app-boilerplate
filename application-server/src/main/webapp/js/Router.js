@@ -16,9 +16,9 @@ HelloWorldView
             this.helloWorldView = new HelloWorldView();
         },
         routes: {
-            '': 'default'
+            '': 'defaultRoute'
         },
-        default: function() {
+        defaultRoute: function() {
             this.helloWorldView.render();
         }
     });

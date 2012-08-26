@@ -1,3 +1,7 @@
 *.idea
 *.iml
 application-server/application-server.iml
+undefined
+application-server/target/
+application-server/node_modules/
+application-server/npm-debug.log
