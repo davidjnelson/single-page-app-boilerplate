@@ -26,14 +26,6 @@
 
                 <extensions>true</extensions>
 
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
-
                 <configuration>
                     <specRunnerTemplate>REQUIRE_JS</specRunnerTemplate>
                     <jsSrcDir>${project.basedir}/src/main/webapp/js</jsSrcDir>
@@ -47,6 +39,32 @@
                     <specIncludes>
                         <include>**/*.js</include>
                     </specIncludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.mcheely</groupId>
+                <artifactId>requirejs-maven-plugin</artifactId>
+                <version>1.0.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>optimize</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- path to optimizer json config file -->
+                    <configFile>
+                        ${basedir}/src/build/buildconfig.js
+                    </configFile>
+                    <!-- optional path to optimizer executable -->
+                    <optimizerFile>
+                        ${basedir}/src/build/r-2.0.6-plus.js
+                    </optimizerFile>
+                    <!-- whether or not to process config with maven filters -->
+                    <filterConfig>
+                        false
+                    </filterConfig>
                 </configuration>
             </plugin>
         </plugins>

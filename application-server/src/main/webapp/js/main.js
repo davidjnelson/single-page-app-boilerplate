@@ -17,12 +17,12 @@ require.config({
 
 require(
 [
-'Router'
+    'Router'
 ],
 function
-(
-Router
-) {
+    (
+        Router
+        ) {
     'use strict';
 
     new Router().start();
