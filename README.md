@@ -19,7 +19,7 @@ Features
 * Write your javascript unit and integration tests in jasmine
 * Run your integration tests during continuous integration only for faster development
 * One command to launch the jasmine browser based test runner
-* One command to run your jasmine unit and integration tests across all browsers you support using js-test-driver
+* One command to run jshint, then your jasmine unit and integration tests across all browsers you support using js-test-driver
 * One command to update your javascript libraries to their latest versions
 * One command to concatentate and minify your javascript and css
 * One http request to load your deployed javascript
@@ -41,8 +41,8 @@ Quickstart
 * `mvn jasmine:bdd` to launch a jasmine spec runner at http://localhost:8234
 * `mvn jstd:server` to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
-* `mvn test` to run your jasmine unit tests across all browsers you captured
-* `mvn test -P run-integration-tests` to run both unit and integration test specs across all browsers you captured
+* `mvn test` to run jshint, then your jasmine unit tests across all browsers you captured
+* `mvn test -P run-integration-tests` to run jshint, then both unit and integration test specs across all browsers you captured
 * add your jasmine specs to src/test/specs
 * add your jasmine integration test specs to src/test/integration-test-specs
 * add your app code to src/main/webapp/js
