@@ -29,6 +29,7 @@ Features
 * Automatically deploy unminified version of your app at a different url in case you need to debug once deployed
 * Track ui screen transitions in google analytics every time your Backbone router url changes
 * Automatic browser back button support using Backbone's router
+* Easily localize your application
 * Runs on OSX, Windows, and Linux
 * MIT licensed.
 
@@ -49,7 +50,7 @@ Quickstart
 * add your google analytics account number to src/main/webapp/js/Constants.js
 * `mvn install -P optimize` to minify and concatenate css
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
-* `mvn spab:versioned-deploy` to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
+* `mvn spab:versioned-deploy` to gzip compress your app, deploy your app to the cloudfront content delivery network, set gzip and caching http headers on your deployed css and javascript in your s3 origin, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
 * `mvn spab:rollback <version_number>` to roll your app back to a specific version number on the cloudfront content delivery network
 
 More Detailed Documentation
