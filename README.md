@@ -42,7 +42,7 @@ Quickstart
 * mvn jstd:server to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * mvn test to run your jasmine unit tests across all browsers you captured
-* mvn test -P run-integration-tests to run integration tests
+* mvn test -P run-integration-tests to run both unit and integration test specs across all browsers you captured
 * add your jasmine specs to src/test/specs
 * add your jasmine integration test specs to src/test/integration-test-specs
 * add your app code to src/main/webapp/js
