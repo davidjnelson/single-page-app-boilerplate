@@ -42,13 +42,30 @@ Quickstart
 * mvn jstd:server to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * mvn test to run your jasmine unit tests across all browsers you captured
+* mvn test -P run-integration-tests to run integration tests
 * add your jasmine specs to src/test/specs
+* add your jasmine integration test specs to src/test/integration-test-specs
 * add your app code to src/main/webapp/js
+* mvn install -P optimize to minify and concatenate css
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
 * mvn spab:versioned-deploy to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
 * mvn spab:rollback <version_number> to roll your app back to a specific version number on the cloudfront content delivery network
 
+More Detailed Documentation
+---------------------------
+
+* [How do I map a domain name to my app once it's deployed to cloudfront?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-map-a-domain-name-to-my-app-once-it's-deployed-to-cloudfront%3F)
+* [How do I setup continuous integration?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-setup-continuous-integration%3F)
+* [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
+* [How do install java and maven?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-install-java-and-maven%3F)
+
+Examples
+--------
+
+* [TODO MVC App In Single Page App Boilerplate](https://github.com/davidjnelson/todo-mvc-in-single-page-app-boilerplate)
+
 Have A Question Or An Idea For A New Feature?
 ---------------------------------------------
+
 * Post it to the [Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate).
 * [Find me on twitter](https://twitter.com/david_j_nelson).
