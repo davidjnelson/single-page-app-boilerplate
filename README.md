@@ -35,22 +35,22 @@ Features
 Quickstart
 ----------
 
-* git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive
-* cd single-page-app-boilerplate/application-server
-* mvn jetty:run to launch a development web server accessible at http://localhost:8080
-* mvn jasmine:bdd to launch a jasmine spec runner at http://localhost:8234
-* mvn jstd:server to launch a js-test-driver server at http://localhost:9876
+* `git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive`
+* `cd single-page-app-boilerplate/application-server`
+* `mvn jetty:run` to launch a development web server accessible at http://localhost:8080
+* `mvn jasmine:bdd` to launch a jasmine spec runner at http://localhost:8234
+* `mvn jstd:server` to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
-* mvn test to run your jasmine unit tests across all browsers you captured
-* mvn test -P run-integration-tests to run both unit and integration test specs across all browsers you captured
+* `mvn test` to run your jasmine unit tests across all browsers you captured
+* `mvn test -P run-integration-tests` to run both unit and integration test specs across all browsers you captured
 * add your jasmine specs to src/test/specs
 * add your jasmine integration test specs to src/test/integration-test-specs
 * add your app code to src/main/webapp/js
 * add your google analytics account number to src/main/webapp/js/Constants.js
-* mvn install -P optimize to minify and concatenate css
+* `mvn install -P optimize` to minify and concatenate css
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
-* mvn spab:versioned-deploy to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
-* mvn spab:rollback <version_number> to roll your app back to a specific version number on the cloudfront content delivery network
+* `mvn spab:versioned-deploy` to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
+* `mvn spab:rollback <version_number>` to roll your app back to a specific version number on the cloudfront content delivery network
 
 More Detailed Documentation
 ---------------------------
