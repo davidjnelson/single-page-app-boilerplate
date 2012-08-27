@@ -48,5 +48,5 @@ Quickstart
 
 Have A Question Or An Idea For A New Feature?
 ---------------------------------------------
-Post it to the [Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate).
-[Find me on twitter](https://twitter.com/david_j_nelson).
+* Post it to the [Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate).
+* [Find me on twitter](https://twitter.com/david_j_nelson).
