@@ -55,9 +55,12 @@ More Detailed Documentation
 ---------------------------
 
 * [How do I map a domain name to my app once it's deployed to cloudfront?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-map-a-domain-name-to-my-app-once-it's-deployed-to-cloudfront%3F)
+* [How do I access my application server from my ui code?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
 * [How do I setup continuous integration?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-setup-continuous-integration%3F)
 * [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
 * [How do install java and maven?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/How-do-install-java-and-maven%3F)
+* [Do I have to deploy my application to cloudront?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/Do-I-have-to-deploy-my-application-to-cloudront%3F)
+* [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/js-test-driver-recursive-glob/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
 
 Examples
 --------
