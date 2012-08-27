@@ -1,7 +1,7 @@
 Single Page App Boilerplate
 ===========================
 
-Single Page App Boilerplate allows you to easily create single page apps quickly using best practices such as test driven development, javascript dependency management, and continuous integration.
+Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration.
 
 Goals
 -----
@@ -23,7 +23,7 @@ Features
 * One command to update your javascript libraries to their latest versions
 * One command to concatentate and minify your javascript and css
 * One http request to load your deployed javascript
-* One command to version your application, gzip your javascript and css, and deploy it to the cloudfront cdn using an s3 origin
+* One command to version your application, gzip your javascript and css, and deploy it to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
 * One command to rollback your application to a different version
 * Precompile your handlebars templates
 * Automatically deploy unminified version of your app at a different url in case you need to debug once deployed
@@ -40,10 +40,10 @@ Quickstart
 * mvn jetty:run to launch a development web server accessible at http://localhost:8080
 * mvn jasmine:bdd to launch a jasmine spec runner at http://localhost:8234
 * mvn jstd:server to launch a js-test-driver server at http://localhost:9876
-* open all the browsers you want to test your code in (Example: Windows; IE7, IE8, IE9, Chrome latest, Firefox latest, Safari latest. OSX; Chrome latest, Firefox latest, Safari latest), and navigate to http://localhost:9876 and click 'Capture Browser'
+* open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * mvn test to run your jasmine unit tests across all browsers you captured
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
-* mvn spab:versioned-deploy to deploy your app to the cloudfront content delivery network
+* mvn spab:versioned-deploy to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
 * mvn spab:rollback <version_number> to roll your app back to a specific version number on the cloudfront content delivery network
 
 Have A Question Or An Idea For A New Feature?
