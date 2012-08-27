@@ -42,6 +42,8 @@ Quickstart
 * mvn jstd:server to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * mvn test to run your jasmine unit tests across all browsers you captured
+* add your jasmine specs to src/test/specs
+* add your app code to src/main/webapp/js
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
 * mvn spab:versioned-deploy to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
 * mvn spab:rollback <version_number> to roll your app back to a specific version number on the cloudfront content delivery network
