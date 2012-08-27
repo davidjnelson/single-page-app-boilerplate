@@ -27,7 +27,7 @@ Features
 * One command to rollback your application to a different version
 * Precompile your handlebars templates
 * Automatically deploy unminified version of your app at a different url in case you need to debug once deployed
-* Track ui screen transitions in google analytics
+* Track ui screen transitions in google analytics every time your Backbone router url changes
 * Automatic browser back button support using Backbone's router
 * Runs on OSX, Windows, and Linux
 * MIT licensed.
@@ -46,6 +46,7 @@ Quickstart
 * add your jasmine specs to src/test/specs
 * add your jasmine integration test specs to src/test/integration-test-specs
 * add your app code to src/main/webapp/js
+* add your google analytics account number to src/main/webapp/js/Constants.js
 * mvn install -P optimize to minify and concatenate css
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
 * mvn spab:versioned-deploy to gzip compress your app, deploy your app to the cloudfront content delivery network, set setting gzip and caching http headers, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
