@@ -47,7 +47,7 @@ Quickstart
 * import the project into your favorite IDE by importing the maven `pom.xml` file
 * add your jasmine specs to `src/test/specs`
 * add your jasmine integration test specs to `src/test/integration-test-specs`
-* add your app code to `src/main/webapp/js`.  Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
+* add your app code to `src/main/webapp/js`.`{  }`Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
 * `mvn install -P optimize` to minify and concatenate css
 * edit `amazonAccessKey` and `amazonKeySecret` to match your amazon web service credentials in `pom.xml`
