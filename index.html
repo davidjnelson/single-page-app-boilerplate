@@ -31,6 +31,10 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <h1>Single Page App Boilerplate</h1>
+
+<p>Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration.</p>
+
 <h2>Goals</h2>
 
 <ul>
@@ -75,9 +79,10 @@
 <code>mvn test</code> to run jshint, then your jasmine unit tests across all browsers you captured</li>
 <li>
 <code>mvn test -P run-integration-tests</code> to run jshint, then both unit and integration test specs across all browsers you captured</li>
+<li>import the project into your favorite IDE by importing the maven pom.xml file</li>
 <li>add your jasmine specs to src/test/specs</li>
 <li>add your jasmine integration test specs to src/test/integration-test-specs</li>
-<li>add your app code to src/main/webapp/js</li>
+<li>add your app code to src/main/webapp/js.  Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.</li>
 <li>add your google analytics account number to src/main/webapp/js/Constants.js</li>
 <li>
 <code>mvn install -P optimize</code> to minify and concatenate css</li>
@@ -93,7 +98,7 @@
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F">How do I access my application server from my ui code?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F">How do I setup continuous integration?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F">How do I update the javascript library dependencies to their latest versions?</a></li>
-<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F">How do install java and maven?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F">How do install java and maven in under 10 minutes if I don't already have them installed?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-I-have-to-deploy-my-application-to-cloudfront%3F">Do I have to deploy my application to cloudfront?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F">Do you recommend a specific IDE for javascript development?</a></li>
 </ul><h2>Examples</h2>
@@ -103,7 +108,7 @@
 </ul><h2>Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?</h2>
 
 <ul>
-<li>Questions: Post it to the <a href="https://groups.google.com/forum/#!forum/single-page-app-boilerplate">Single Page App Boilerplate google group</a>
+<li>Questions: <a href="https://groups.google.com/forum/#!forum/single-page-app-boilerplate">Post it to the Single Page App Boilerplate google group</a>
 </li>
 <li>Found A Bug: <a href="https://github.com/davidjnelson/single-page-app-boilerplate/issues/new">Create A New Issue</a>
 </li>
