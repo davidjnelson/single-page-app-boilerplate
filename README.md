@@ -44,6 +44,7 @@ Quickstart
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * `mvn test` to run jshint, then your jasmine unit tests across all browsers you captured
 * `mvn test -P run-integration-tests` to run jshint, then both unit and integration test specs across all browsers you captured
+* import the project into your favorite IDE by importing the maven pom.xml file
 * add your jasmine specs to src/test/specs
 * add your jasmine integration test specs to src/test/integration-test-specs
 * add your app code to src/main/webapp/js
