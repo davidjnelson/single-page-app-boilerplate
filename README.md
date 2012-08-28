@@ -47,7 +47,7 @@ Quickstart
 * import the project into your favorite IDE by importing the maven pom.xml file
 * add your jasmine specs to src/test/specs
 * add your jasmine integration test specs to src/test/integration-test-specs
-* add your app code to src/main/webapp/js
+* add your app code to src/main/webapp/js.  Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
 * add your google analytics account number to src/main/webapp/js/Constants.js
 * `mvn install -P optimize` to minify and concatenate css
 * edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml
@@ -61,7 +61,7 @@ More Detailed Documentation
 * [How do I access my application server from my ui code?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
 * [How do I setup continuous integration?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F)
 * [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
-* [How do install java and maven?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F)
+* [How do install java and maven in under 10 minutes if I don't already have them installed?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F)
 * [Do I have to deploy my application to cloudfront?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-I-have-to-deploy-my-application-to-cloudfront%3F)
 * [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
 
