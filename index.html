@@ -79,14 +79,18 @@
 <code>mvn test</code> to run jshint, then your jasmine unit tests across all browsers you captured</li>
 <li>
 <code>mvn test -P run-integration-tests</code> to run jshint, then both unit and integration test specs across all browsers you captured</li>
-<li>import the project into your favorite IDE by importing the maven pom.xml file</li>
-<li>add your jasmine specs to src/test/specs</li>
-<li>add your jasmine integration test specs to src/test/integration-test-specs</li>
-<li>add your app code to src/main/webapp/js.  Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.</li>
-<li>add your google analytics account number to src/main/webapp/js/Constants.js</li>
+<li>import the project into your favorite IDE by importing the maven <code>pom.xml</code> file</li>
+<li>add your jasmine specs to <code>src/test/specs</code>
+</li>
+<li>add your jasmine integration test specs to <code>src/test/integration-test-specs</code>
+</li>
+<li>add your app code to <code>src/main/webapp/js</code>.  Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.</li>
+<li>add your google analytics account number to <code>src/main/webapp/js/Constants.js</code>
+</li>
 <li>
 <code>mvn install -P optimize</code> to minify and concatenate css</li>
-<li>edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml</li>
+<li>edit <code>amazonAccessKey</code> and <code>amazonKeySecret</code> to match your amazon web service credentials in <code>pom.xml</code>
+</li>
 <li>
 <code>mvn spab:versioned-deploy</code> to gzip compress your app, deploy your app to the cloudfront content delivery network, set gzip and caching http headers on your deployed css and javascript in your s3 origin, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app</li>
 <li>
