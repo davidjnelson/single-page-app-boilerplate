@@ -72,7 +72,7 @@ Examples
 Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?
 --------------------------------------------------------------------------------------
 
-* Questions: Post it to the [Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate)
+* Questions: [Post it to the Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate)
 * Found A Bug: [Create A New Issue](https://github.com/davidjnelson/single-page-app-boilerplate/issues/new)
 * Idea For A New Feature: [Create A New Issue](https://github.com/davidjnelson/single-page-app-boilerplate/issues/new)
 * Follow Me On Twitter: [@david_j_nelson](https://twitter.com/david_j_nelson)
