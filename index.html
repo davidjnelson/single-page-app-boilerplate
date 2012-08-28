@@ -1,1 +1,143 @@
-My github page
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Single-page-app-boilerplate : Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Single-page-app-boilerplate</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/davidjnelson/single-page-app-boilerplate">View on GitHub</a>
+
+          <h1 id="project_title">Single-page-app-boilerplate</h1>
+          <h2 id="project_tagline">Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/davidjnelson/single-page-app-boilerplate/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/davidjnelson/single-page-app-boilerplate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Single Page App Boilerplate</h1>
+
+<p>Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration.</p>
+
+<h2>Goals</h2>
+
+<ul>
+<li>Make test driven development in javascript easy</li>
+<li>Make continuous integration of web user interfaces easy</li>
+<li>Provide a solid foundation wiring together popular front end libraries in an easy to use way</li>
+<li>Make it easy to deploy and rollback versioned web user interface code and images to a content delivery network</li>
+</ul><h2>Features</h2>
+
+<ul>
+<li>Based on html5 boilerplate</li>
+<li>Backbone, jquery, underscore, handlebars, requirejs, and modernizr are all wired together and ready to use, with no modifications made to them</li>
+<li>Write your javascript unit and integration tests in jasmine</li>
+<li>Run your integration tests during continuous integration only for faster development</li>
+<li>One command to launch the jasmine browser based test runner</li>
+<li>One command to run jshint, then your jasmine unit and integration tests across all browsers you support using js-test-driver</li>
+<li>One command to update your javascript libraries to their latest versions</li>
+<li>One command to concatentate and minify your javascript and css</li>
+<li>One http request to load your deployed javascript</li>
+<li>One command to version your application, gzip your javascript and css, and deploy it to the cloudfront cdn using an s3 origin while setting gzip and caching http headers</li>
+<li>One command to rollback your application to a different version</li>
+<li>Precompile your handlebars templates</li>
+<li>Automatically deploy unminified version of your app at a different url in case you need to debug once deployed</li>
+<li>Track ui screen transitions in google analytics every time your Backbone router url changes</li>
+<li>Automatic browser back button support using Backbone's router</li>
+<li>Easily localize your application</li>
+<li>Runs on OSX, Windows, and Linux</li>
+<li>MIT licensed.</li>
+</ul><h2>Quickstart</h2>
+
+<ul>
+<li><code>git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive</code></li>
+<li><code>cd single-page-app-boilerplate/application-server</code></li>
+<li>
+<code>mvn jetty:run</code> to launch a development web server accessible at http://localhost:8080</li>
+<li>
+<code>mvn jasmine:bdd</code> to launch a jasmine spec runner at http://localhost:8234</li>
+<li>
+<code>mvn jstd:server</code> to launch a js-test-driver server at http://localhost:9876</li>
+<li>open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'</li>
+<li>
+<code>mvn test</code> to run jshint, then your jasmine unit tests across all browsers you captured</li>
+<li>
+<code>mvn test -P run-integration-tests</code> to run jshint, then both unit and integration test specs across all browsers you captured</li>
+<li>add your jasmine specs to src/test/specs</li>
+<li>add your jasmine integration test specs to src/test/integration-test-specs</li>
+<li>add your app code to src/main/webapp/js</li>
+<li>add your google analytics account number to src/main/webapp/js/Constants.js</li>
+<li>
+<code>mvn install -P optimize</code> to minify and concatenate css</li>
+<li>edit amazonAccessKey and amazon amazonKeySecret to match your amazon web service credentials in pom.xml</li>
+<li>
+<code>mvn spab:versioned-deploy</code> to gzip compress your app, deploy your app to the cloudfront content delivery network, set gzip and caching http headers on your deployed css and javascript in your s3 origin, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app</li>
+<li>
+<code>mvn spab:rollback &lt;version_number&gt;</code> to roll your app back to a specific version number on the cloudfront content delivery network</li>
+</ul><h2>More Detailed Documentation</h2>
+
+<ul>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-map-a-domain-name-to-my-app-once-it's-deployed-to-cloudfront%3F">How do I map a domain name to my app once it's deployed to cloudfront?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F">How do I access my application server from my ui code?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F">How do I setup continuous integration?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F">How do I update the javascript library dependencies to their latest versions?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F">How do install java and maven?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-I-have-to-deploy-my-application-to-cloudfront%3F">Do I have to deploy my application to cloudfront?</a></li>
+<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F">Do you recommend a specific IDE for javascript development?</a></li>
+</ul><h2>Examples</h2>
+
+<ul>
+<li><a href="https://github.com/davidjnelson/todo-mvc-in-single-page-app-boilerplate">TODO MVC App In Single Page App Boilerplate</a></li>
+</ul><h2>Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?</h2>
+
+<ul>
+<li>Questions: Post it to the <a href="https://groups.google.com/forum/#!forum/single-page-app-boilerplate">Single Page App Boilerplate google group</a>
+</li>
+<li>Found A Bug: <a href="https://github.com/davidjnelson/single-page-app-boilerplate/issues/new">Create A New Issue</a>
+</li>
+<li>Idea For A New Feature: <a href="https://github.com/davidjnelson/single-page-app-boilerplate/issues/new">Create A New Issue</a>
+</li>
+<li>Follow Me On Twitter: <a href="https://twitter.com/david_j_nelson">@david_j_nelson</a>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Single-page-app-boilerplate maintained by <a href="https://github.com/davidjnelson">davidjnelson</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-6242674-10");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
