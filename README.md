@@ -47,7 +47,9 @@ Quickstart
 * add your app code to `src/main/webapp/js`.`{  }`Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
 * `mvn install -P optimize` to minify and concatenate css
-* edit `amazonAccessKey` and `amazonKeySecret` to match your amazon web service credentials in `pom.xml`
+* Log in to the AWS console, and create an S3 bucket.  Note the name you used.
+* Edit the `s3Bucket` under the `beanstalk-maven-plugin` to the same name you used in the last step when you created the s3 bucket.
+* edit `accessKey` and `secretKey` under the `beanstalk-maven-plugin` to match your amazon web service credentials in `pom.xml`
 * `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to concatentate and minify your javascript and css, and deploy your app to elastic beanstalk, without 
 * `mvn beanstalk:rollback-version` to roll your app back to a specific version number
 
