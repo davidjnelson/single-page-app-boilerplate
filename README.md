@@ -21,7 +21,7 @@ Features
 * One command to run then jasmine unit and integration tests across all browsers you support using js-test-driver
 * One command to concatentate and minify your javascript and css
 * One http request to load your deployed javascript
-* One command to version your application, gzip your javascript and css, and deploy it to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
+* One command to version your application, gzip your javascript and css, and deploy it to elastic beanstalk
 * One command to rollback your application to a different version
 * Precompile your handlebars templates
 * Automatically deploy unminified version of your app at a different url in case you need to debug once deployed
