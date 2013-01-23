@@ -48,7 +48,7 @@ Quickstart
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
 * `mvn install -P optimize` to minify and concatenate css
 * edit `amazonAccessKey` and `amazonKeySecret` to match your amazon web service credentials in `pom.xml`
-* `mvn install beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to gzip compress your app, and deploy your app to elastic beanstalk, without 
+* `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to concatentate and minify your javascript and css, and deploy your app to elastic beanstalk, without 
 * `mvn beanstalk:rollback-version` to roll your app back to a specific version number
 
 Future Project Goals
