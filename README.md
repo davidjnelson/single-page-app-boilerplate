@@ -58,6 +58,7 @@ Future Project Goals
 * deployment to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
 * no modifications made javascript libraries by using requirejs shims.  currently libraries are wrapped with an AMD module
 * One command to update your javascript libraries to their latest versions
+* Integrate with yeoman for scaffolding for major js libraries
 
 
 More Detailed Documentation
