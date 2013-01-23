@@ -9,18 +9,16 @@ Goals
 * Make test driven development in javascript easy
 * Make continuous integration of web user interfaces easy
 * Provide a solid foundation wiring together popular front end libraries in an easy to use way
-* Make it easy to deploy and rollback versioned web user interface code and images to a content delivery network
+* Make it easy to deploy and rollback versioned web user interface code and images to aws elastic beanstalk
 
 Features
 --------
 
 * Based on html5 boilerplate
-* Backbone, jquery, underscore, handlebars, requirejs, and modernizr are all wired together and ready to use, with no modifications made to them
+* Backbone, jquery, underscore, handlebars, requirejs, and modernizr are all wired together and ready to use
 * Write your javascript unit and integration tests in jasmine
-* Run your integration tests during continuous integration only for faster development
 * One command to launch the jasmine browser based test runner
-* One command to run jshint, then your jasmine unit and integration tests across all browsers you support using js-test-driver
-* One command to update your javascript libraries to their latest versions
+* One command to run then jasmine unit and integration tests across all browsers you support using js-test-driver
 * One command to concatentate and minify your javascript and css
 * One http request to load your deployed javascript
 * One command to version your application, gzip your javascript and css, and deploy it to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
@@ -40,10 +38,9 @@ Quickstart
 * `cd single-page-app-boilerplate/application-server`
 * `mvn jetty:run` to launch a development web server accessible at http://localhost:8080
 * `mvn jasmine:bdd` to launch a jasmine spec runner at http://localhost:8234
-* `mvn jstd:server` to launch a js-test-driver server at http://localhost:9876
+* `java -jar ../bin/JsTestDriver.jar --port 9876` to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
-* `mvn test` to run jshint, then your jasmine unit tests across all browsers you captured
-* `mvn test -P run-integration-tests` to run jshint, then both unit and integration test specs across all browsers you captured
+* `mvn test` to run your jasmine unit and integration tests across all browsers you captured
 * import the project into your favorite IDE by importing the maven `pom.xml` file
 * add your jasmine specs to `src/test/specs`
 * add your jasmine integration test specs to `src/test/integration-test-specs`
@@ -51,8 +48,17 @@ Quickstart
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
 * `mvn install -P optimize` to minify and concatenate css
 * edit `amazonAccessKey` and `amazonKeySecret` to match your amazon web service credentials in `pom.xml`
-* `mvn spab:versioned-deploy` to gzip compress your app, deploy your app to the cloudfront content delivery network, set gzip and caching http headers on your deployed css and javascript in your s3 origin, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app
-* `mvn spab:rollback <version_number>` to roll your app back to a specific version number on the cloudfront content delivery network
+* `mvn install beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to gzip compress your app, and deploy your app to elastic beanstalk, without 
+* `mvn beanstalk:rollback-version` to roll your app back to a specific version number
+
+Future Project Goals
+--------------------
+* Run your integration tests during continuous integration only for faster development
+* jshint integration
+* deployment to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
+* no modifications made javascript libraries by using requirejs shims.  currently libraries are wrapped with an AMD module
+* One command to update your javascript libraries to their latest versions
+
 
 More Detailed Documentation
 ---------------------------
