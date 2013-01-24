@@ -44,7 +44,7 @@ Quickstart
 * add your jasmine integration test specs to `src/test/integration-test-specs`
 * add your app code to `src/main/webapp/js`.`{  }`Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
-* `mvn install -P optimize` to minify and concatenate css
+* `mvn install -P optimize` to minify and concatenate css.  Your deployable site will be output to `target/minified-output`.  To use the optimized version, load index.html.  To use the debug version, load index_unminified.html.
 
 Future Project Goals
 --------------------
