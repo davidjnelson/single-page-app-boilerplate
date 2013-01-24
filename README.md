@@ -9,7 +9,6 @@ Goals
 * Make test driven development in javascript easy
 * Make continuous integration of web user interfaces easy
 * Provide a solid foundation wiring together popular front end libraries in an easy to use way
-* Make it easy to deploy and rollback versioned web user interface code and images to aws elastic beanstalk
 
 Features
 --------
