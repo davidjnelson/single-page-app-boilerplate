@@ -50,7 +50,8 @@ Quickstart
 * Log in to the AWS console, and create an S3 bucket.  Note the name you used.
 * Edit the `s3Bucket` under the `beanstalk-maven-plugin` to the same name you used in the last step when you created the s3 bucket.
 * edit `accessKey` and `secretKey` under the `beanstalk-maven-plugin` to match your amazon web service credentials in `pom.xml`
-* `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to concatentate and minify your javascript and css, and deploy your app to elastic beanstalk, without 
+* the very first time you deploy your app, run: `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:create-environment`
+* to redeploy your app, run: `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to concatentate and minify your javascript and css, and deploy your app to elastic beanstalk. 
 * `mvn beanstalk:rollback-version` to roll your app back to a specific version number
 
 Future Project Goals
