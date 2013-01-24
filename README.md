@@ -21,8 +21,6 @@ Features
 * One command to run then jasmine unit and integration tests across all browsers you support using js-test-driver
 * One command to concatentate and minify your javascript and css
 * One http request to load your deployed javascript
-* One command to version your application, gzip your javascript and css, and deploy it to elastic beanstalk
-* One command to rollback your application to a different version
 * Precompile your handlebars templates
 * Automatically deploy unminified version of your app at a different url in case you need to debug once deployed
 * Track ui screen transitions in google analytics every time your Backbone router url changes
@@ -47,12 +45,6 @@ Quickstart
 * add your app code to `src/main/webapp/js`.`{  }`Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
 * `mvn install -P optimize` to minify and concatenate css
-* Log in to the AWS console, and create an S3 bucket.  Note the name you used.
-* Edit the `s3Bucket` under the `beanstalk-maven-plugin` to the same name you used in the last step when you created the s3 bucket.
-* edit `accessKey` and `secretKey` under the `beanstalk-maven-plugin` to match your amazon web service credentials in `pom.xml`
-* the very first time you deploy your app, run: `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:create-environment`
-* to redeploy your app, run: `mvn install -P optimize beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:update-environment` to concatentate and minify your javascript and css, and deploy your app to elastic beanstalk. 
-* `mvn beanstalk:rollback-version` to roll your app back to a specific version number
 
 Future Project Goals
 --------------------
@@ -61,24 +53,18 @@ Future Project Goals
 * deployment to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
 * no modifications made javascript libraries by using requirejs shims.  currently libraries are wrapped with an AMD module
 * One command to update your javascript libraries to their latest versions
-* Integrate with yeoman for scaffolding for major js libraries
+* Integrate with yeoman for scaffolding for major js libraries other than Backbone
+* One command to rollback your application to a different version
 
 
 More Detailed Documentation
 ---------------------------
 
-* [How do I map a domain name to my app once it's deployed to cloudfront?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-map-a-domain-name-to-my-app-once-it's-deployed-to-cloudfront%3F)
 * [How do I access my application server from my ui code?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
 * [How do I setup continuous integration?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F)
 * [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
 * [How do install java and maven in under 10 minutes if I don't already have them installed?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F)
-* [Do I have to deploy my application to cloudfront?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-I-have-to-deploy-my-application-to-cloudfront%3F)
 * [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
-
-Examples
---------
-
-* [TODO MVC App In Single Page App Boilerplate](https://github.com/davidjnelson/todo-mvc-in-single-page-app-boilerplate)
 
 Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?
 --------------------------------------------------------------------------------------
