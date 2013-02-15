@@ -33,8 +33,8 @@ Quickstart
 
 * `git clone https://github.com/davidjnelson/agilejs.git --recursive`
 * `cd agilejs/application-server`
-* `mvn jetty:run` to launch a development web server accessible at http://localhost:8080
-* `mvn jasmine:bdd` to launch a jasmine spec runner at http://localhost:8234
+* `mvn jetty:run &` to launch a development web server accessible at http://localhost:8080
+* `mvn jasmine:bdd &` to launch a jasmine spec runner at http://localhost:8234
 * `java -jar ../bin/JsTestDriver.jar --port 9876 &` to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * `mvn test` to run your jasmine unit and integration tests across all browsers you captured
