@@ -1,8 +1,7 @@
 AgileJS
 =======
 
-AgileJS allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration (coming soon).
-
+AgileJS allows you to easily and quickly create single page javascript applications using best practices such as test driven development, javascript dependency management, automated builds, and (coming soon) continuous integration. 
 Goals
 -----
 
