@@ -6,6 +6,7 @@ Goals
 -----
 
 * Make test driven development in javascript easy
+* Automate javascript builds leveraging dependency management.
 * Make continuous integration of web user interfaces easy (coming soon)
 * Provide a solid foundation wiring together popular front end libraries in an easy to use way
 
