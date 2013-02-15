@@ -59,16 +59,16 @@ Future Project Goals
 More Detailed Documentation
 ---------------------------
 
-* [How do I access my application server from my ui code?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
-* [How do I setup continuous integration?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F)
-* [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
-* [How do install java and maven in under 10 minutes if I don't already have them installed?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F)
-* [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
+* [How do I access my application server from my ui code?](https://github.com/davidjnelson/agilejs/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
+* [How do I setup continuous integration?](https://github.com/davidjnelson/agilejs/wiki/How-do-I-setup-continuous-integration%3F)
+* [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/agilejs/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
+* [How do install java and maven in under 10 minutes if I don't already have them installed?](https://github.com/davidjnelson/agilejs/wiki/How-do-install-java-and-maven%3F)
+* [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/agilejs/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
 
 Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?
 --------------------------------------------------------------------------------------
 
-* Questions: [Post it to the Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/single-page-app-boilerplate)
-* Found A Bug: [Create A New Issue](https://github.com/davidjnelson/single-page-app-boilerplate/issues/new)
-* Idea For A New Feature: [Create A New Issue](https://github.com/davidjnelson/single-page-app-boilerplate/issues/new)
+* Questions: [Post it to the Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/agilejs)
+* Found A Bug: [Create A New Issue](https://github.com/davidjnelson/agilejs/issues/new)
+* Idea For A New Feature: [Create A New Issue](https://github.com/davidjnelson/agilejs/issues/new)
 * Follow Me On Twitter: [@david_j_nelson](https://twitter.com/david_j_nelson)
