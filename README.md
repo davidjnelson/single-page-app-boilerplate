@@ -68,7 +68,7 @@ More Detailed Documentation
 Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?
 --------------------------------------------------------------------------------------
 
-* Questions: [Post it to the Single Page App Boilerplate google group](https://groups.google.com/forum/#!forum/agilejs)
+* Questions: [Post it to the AgileJS google group](https://groups.google.com/forum/#!forum/agilejs)
 * Found A Bug: [Create A New Issue](https://github.com/davidjnelson/agilejs/issues/new)
 * Idea For A New Feature: [Create A New Issue](https://github.com/davidjnelson/agilejs/issues/new)
 * Follow Me On Twitter: [@david_j_nelson](https://twitter.com/david_j_nelson)
