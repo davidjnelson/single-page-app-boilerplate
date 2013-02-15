@@ -1,4 +1,6 @@
-paths: {
+require.config({
+    baseUrl: '/test/src/main/webapp/js',
+    paths: {
         // alias versioned dependencies to simplify updating as new versions are released
         jquery: '3rdparty/jquery-1.8.0',
         underscore: '3rdparty/underscore-1.3.3',
@@ -11,4 +13,6 @@ paths: {
         hbs: '3rdparty/handlebars/handlebars-plugin-0.2.1',
         json2: '3rdparty/json2',
         'handlebars-i18nprecompile': '3rdparty/handlebars/handlebars-i18nprecompile'
-}
+    }
+
+});

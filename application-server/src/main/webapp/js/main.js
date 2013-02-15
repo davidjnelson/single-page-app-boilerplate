@@ -3,7 +3,7 @@ require.config({
         // alias versioned dependencies to simplify updating as new versions are released
         jquery: '3rdparty/jquery-1.8.0',
         underscore: '3rdparty/underscore-1.3.3',
-        backbone: '3rdparty/backbone-0.9.2',
+        backbone: '3rdparty/backbone-0.9.10',
         text: '3rdparty/requirejs/text-2.0.1',
         modernizr: '3rdparty/modernizr-2.6.1.js',
         // match handlebars requirejs plugin to avoid having to edit the contents of handlebars plugin when updating it to a new version

@@ -1,13 +1,12 @@
-define
-(
+define(
 [
-'jquery',
-'Router'
+    'jquery',
+    'Router'
 ],
 function
 (
-$,
-Router
+    $,
+    Router
 ) {
     'use strict';
 
