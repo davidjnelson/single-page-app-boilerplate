@@ -1,13 +1,13 @@
-Single Page App Boilerplate
-===========================
+AgileJS
+=======
 
-Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration.
+AgileJS allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration (coming soon).
 
 Goals
 -----
 
 * Make test driven development in javascript easy
-* Make continuous integration of web user interfaces easy
+* Make continuous integration of web user interfaces easy (coming soon)
 * Provide a solid foundation wiring together popular front end libraries in an easy to use way
 
 Features
@@ -24,23 +24,22 @@ Features
 * Automatically deploy unminified version of your app at a different url in case you need to debug once deployed
 * Track ui screen transitions in google analytics every time your Backbone router url changes
 * Automatic browser back button support using Backbone's router
-* Easily localize your application
+* Easily localize your application with the requirejs-handlebars-plugins I18N support
 * Runs on OSX, Windows, and Linux
 * MIT licensed.
 
 Quickstart
 ----------
 
-* `git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive`
-* `cd single-page-app-boilerplate/application-server`
+* `git clone https://github.com/davidjnelson/agilejs.git --recursive`
+* `cd agilejs/application-server`
 * `mvn jetty:run` to launch a development web server accessible at http://localhost:8080
 * `mvn jasmine:bdd` to launch a jasmine spec runner at http://localhost:8234
-* `java -jar ../bin/JsTestDriver.jar --port 9876` to launch a js-test-driver server at http://localhost:9876
+* `java -jar ../bin/JsTestDriver.jar --port 9876 &` to launch a js-test-driver server at http://localhost:9876
 * open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'
 * `mvn test` to run your jasmine unit and integration tests across all browsers you captured
 * import the project into your favorite IDE by importing the maven `pom.xml` file
-* add your jasmine specs to `src/test/specs`
-* add your jasmine integration test specs to `src/test/integration-test-specs`
+* add your jasmine specs to `src/test/specs`. Wrap your jasmine specs in requirejs define calls.  See HelloWorldViewTest.js for an example.
 * add your app code to `src/main/webapp/js`.`{  }`Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.
 * add your google analytics account number to `src/main/webapp/js/Constants.js`
 * `mvn install -P optimize` to minify and concatenate css.  Your deployable site will be output to `target/minified-output`.  To use the optimized version, load index.html.  To use the debug version, load index_unminified.html.
@@ -49,7 +48,7 @@ Future Project Goals
 --------------------
 * Run your integration tests during continuous integration only for faster development
 * jshint integration
-* deployment to the cloudfront cdn using an s3 origin while setting gzip and caching http headers
+* deployment to the cloudfront cdn using an s3 or elastic beanstalk origin while setting gzip and caching http headers
 * no modifications made javascript libraries by using requirejs shims.  currently libraries are wrapped with an AMD module
 * One command to update your javascript libraries to their latest versions
 * Integrate with yeoman for scaffolding for major js libraries other than Backbone
