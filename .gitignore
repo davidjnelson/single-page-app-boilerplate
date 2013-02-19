@@ -5,3 +5,4 @@ undefined
 application-server/target/
 application-server/node_modules/
 application-server/npm-debug.log
+.DS_Store
