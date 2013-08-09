@@ -31,89 +31,84 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>Single Page App Boilerplate</h1>
+        <h1>
+<a name="single-page-app-boilerplate" class="anchor" href="#single-page-app-boilerplate"><span class="octicon octicon-link"></span></a>Single Page App Boilerplate</h1>
 
-<p>Single Page App Boilerplate allows you to easily and quickly create single page apps using best practices such as test driven development, javascript dependency management, and continuous integration.</p>
+<p>Single Page App Boilerplate allows you to easily and quickly create single page javascript applications using best practices such as test driven development, javascript dependency management, automated builds, and (coming soon) continuous deployment. </p>
 
-<h2>Goals</h2>
+<h2>
+<a name="goals" class="anchor" href="#goals"><span class="octicon octicon-link"></span></a>Goals</h2>
 
 <ul>
 <li>Make test driven development in javascript easy</li>
+<li>Automate javascript builds leveraging dependency management.</li>
 <li>Make continuous integration of web user interfaces easy</li>
+<li>Automate deployment of single page apps (coming soon)</li>
 <li>Provide a solid foundation wiring together popular front end libraries in an easy to use way</li>
-<li>Make it easy to deploy and rollback versioned web user interface code and images to a content delivery network</li>
-</ul><h2>Features</h2>
+</ul><h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>Based on html5 boilerplate</li>
-<li>Backbone, jquery, underscore, handlebars, requirejs, and modernizr are all wired together and ready to use, with no modifications made to them</li>
+<li>Backbone, jquery, underscore, handlebars, requirejs, and modernizr are all wired together and ready to use</li>
 <li>Write your javascript unit and integration tests in jasmine</li>
-<li>Run your integration tests during continuous integration only for faster development</li>
 <li>One command to launch the jasmine browser based test runner</li>
-<li>One command to run jshint, then your jasmine unit and integration tests across all browsers you support using js-test-driver</li>
-<li>One command to update your javascript libraries to their latest versions</li>
+<li>One command to run then jasmine unit and integration tests across all browsers you support using js-test-driver</li>
 <li>One command to concatentate and minify your javascript and css</li>
 <li>One http request to load your deployed javascript</li>
-<li>One command to version your application, gzip your javascript and css, and deploy it to the cloudfront cdn using an s3 origin while setting gzip and caching http headers</li>
-<li>One command to rollback your application to a different version</li>
 <li>Precompile your handlebars templates</li>
 <li>Automatically deploy unminified version of your app at a different url in case you need to debug once deployed</li>
 <li>Track ui screen transitions in google analytics every time your Backbone router url changes</li>
 <li>Automatic browser back button support using Backbone's router</li>
-<li>Easily localize your application</li>
+<li>Easily localize your application with the requirejs-handlebars-plugins I18N support</li>
 <li>Runs on OSX, Windows, and Linux</li>
 <li>MIT licensed.</li>
-</ul><h2>Quickstart</h2>
+</ul><h2>
+<a name="quickstart" class="anchor" href="#quickstart"><span class="octicon octicon-link"></span></a>Quickstart</h2>
 
 <ul>
 <li><code>git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive</code></li>
 <li><code>cd single-page-app-boilerplate/application-server</code></li>
 <li>
-<code>mvn jetty:run</code> to launch a development web server accessible at http://localhost:8080</li>
+<code>mvn jetty:run &amp;</code> to launch a development web server accessible at http://localhost:8080</li>
 <li>
-<code>mvn jasmine:bdd</code> to launch a jasmine spec runner at http://localhost:8234</li>
+<code>mvn jasmine:bdd &amp;</code> to launch a jasmine spec runner at http://localhost:8234</li>
 <li>
-<code>mvn jstd:server</code> to launch a js-test-driver server at http://localhost:9876</li>
+<code>java -jar ../bin/JsTestDriver.jar --port 9876 &amp;</code> to launch a js-test-driver server at http://localhost:9876</li>
 <li>open all the browsers you want to test your code in, navigate to http://localhost:9876 in each and click 'Capture Browser'</li>
 <li>
-<code>mvn test</code> to run jshint, then your jasmine unit tests across all browsers you captured</li>
-<li>
-<code>mvn test -P run-integration-tests</code> to run jshint, then both unit and integration test specs across all browsers you captured</li>
+<code>mvn test</code> to run your jasmine unit and integration tests across all browsers you captured</li>
 <li>import the project into your favorite IDE by importing the maven <code>pom.xml</code> file</li>
-<li>add your jasmine specs to <code>src/test/specs</code>
-</li>
-<li>add your jasmine integration test specs to <code>src/test/integration-test-specs</code>
-</li>
-<li>add your app code to <code>src/main/webapp/js</code>.  Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.</li>
+<li>add your jasmine specs to <code>src/test/specs</code>. Wrap your jasmine specs in requirejs define calls.  See HelloWorldViewTest.js for an example.</li>
+<li>add your app code to <code>src/main/webapp/js</code>.<code>{  }</code>Router.js is your application entry point.  If you want to use more than one router you can create more instances of Router in main.js.</li>
 <li>add your google analytics account number to <code>src/main/webapp/js/Constants.js</code>
 </li>
 <li>
-<code>mvn install -P optimize</code> to minify and concatenate css</li>
-<li>edit <code>amazonAccessKey</code> and <code>amazonKeySecret</code> to match your amazon web service credentials in <code>pom.xml</code>
-</li>
-<li>
-<code>mvn spab:versioned-deploy</code> to gzip compress your app, deploy your app to the cloudfront content delivery network, set gzip and caching http headers on your deployed css and javascript in your s3 origin, and invalidate your root object so your application becomes live as soon as all cloudfront edge servers have received your updated app</li>
-<li>
-<code>mvn spab:rollback &lt;version_number&gt;</code> to roll your app back to a specific version number on the cloudfront content delivery network</li>
-</ul><h2>More Detailed Documentation</h2>
+<code>mvn install -P optimize</code> to minify and concatenate css.  Your deployable site will be output to <code>target/minified-output</code>.  To use the optimized version, load index.html.  To use the debug version, load index_unminified.html.</li>
+</ul><h2>
+<a name="future-project-goals" class="anchor" href="#future-project-goals"><span class="octicon octicon-link"></span></a>Future Project Goals</h2>
 
 <ul>
-<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-map-a-domain-name-to-my-app-once-it's-deployed-to-cloudfront%3F">How do I map a domain name to my app once it's deployed to cloudfront?</a></li>
+<li>Run your integration tests during continuous integration only for faster development</li>
+<li>jshint integration</li>
+<li>deployment to the cloudfront cdn using an s3 or elastic beanstalk origin while setting gzip and caching http headers</li>
+<li>no modifications made javascript libraries by using requirejs shims.  currently libraries are wrapped with an AMD module</li>
+<li>One command to update your javascript libraries to their latest versions</li>
+<li>Integrate with yeoman for scaffolding for major js libraries other than Backbone</li>
+<li>One command to rollback your application to a different version</li>
+</ul><h2>
+<a name="more-detailed-documentation" class="anchor" href="#more-detailed-documentation"><span class="octicon octicon-link"></span></a>More Detailed Documentation</h2>
+
+<ul>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F">How do I access my application server from my ui code?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F">How do I setup continuous integration?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F">How do I update the javascript library dependencies to their latest versions?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F">How do install java and maven in under 10 minutes if I don't already have them installed?</a></li>
-<li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-I-have-to-deploy-my-application-to-cloudfront%3F">Do I have to deploy my application to cloudfront?</a></li>
 <li><a href="https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F">Do you recommend a specific IDE for javascript development?</a></li>
-</ul><h2>Examples</h2>
+</ul><h2>
+<a name="have-a-question-found-a-bug-idea-for-a-new-feature-or-want-to-follow-me-on-twitter" class="anchor" href="#have-a-question-found-a-bug-idea-for-a-new-feature-or-want-to-follow-me-on-twitter"><span class="octicon octicon-link"></span></a>Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?</h2>
 
 <ul>
-<li><a href="https://github.com/davidjnelson/todo-mvc-in-single-page-app-boilerplate">TODO MVC App In Single Page App Boilerplate</a></li>
-</ul><h2>Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?</h2>
-
-<ul>
-<li>Questions: <a href="https://groups.google.com/forum/#!forum/single-page-app-boilerplate">Post it to the Single Page App Boilerplate google group</a>
-</li>
 <li>Found A Bug: <a href="https://github.com/davidjnelson/single-page-app-boilerplate/issues/new">Create A New Issue</a>
 </li>
 <li>Idea For A New Feature: <a href="https://github.com/davidjnelson/single-page-app-boilerplate/issues/new">Create A New Issue</a>
