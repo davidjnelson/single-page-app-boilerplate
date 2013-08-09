@@ -1,7 +1,7 @@
-AgileJS
-=======
+Single Page App Boilerplate
+===========================
 
-AgileJS allows you to easily and quickly create single page javascript applications using best practices such as test driven development, javascript dependency management, automated builds, and (coming soon) continuous deployment. 
+Single Page App Boilerplate allows you to easily and quickly create single page javascript applications using best practices such as test driven development, javascript dependency management, automated builds, and (coming soon) continuous deployment. 
 Goals
 -----
 
@@ -32,8 +32,8 @@ Features
 Quickstart
 ----------
 
-* `git clone https://github.com/davidjnelson/agilejs.git --recursive`
-* `cd agilejs/application-server`
+* `git clone https://github.com/davidjnelson/single-page-app-boilerplate.git --recursive`
+* `cd single-page-app-boilerplate/application-server`
 * `mvn jetty:run &` to launch a development web server accessible at http://localhost:8080
 * `mvn jasmine:bdd &` to launch a jasmine spec runner at http://localhost:8234
 * `java -jar ../bin/JsTestDriver.jar --port 9876 &` to launch a js-test-driver server at http://localhost:9876
@@ -59,16 +59,15 @@ Future Project Goals
 More Detailed Documentation
 ---------------------------
 
-* [How do I access my application server from my ui code?](https://github.com/davidjnelson/agilejs/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
-* [How do I setup continuous integration?](https://github.com/davidjnelson/agilejs/wiki/How-do-I-setup-continuous-integration%3F)
-* [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/agilejs/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
-* [How do install java and maven in under 10 minutes if I don't already have them installed?](https://github.com/davidjnelson/agilejs/wiki/How-do-install-java-and-maven%3F)
-* [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/agilejs/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
+* [How do I access my application server from my ui code?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-access-my-application-server-from-my-ui-code%3F)
+* [How do I setup continuous integration?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-setup-continuous-integration%3F)
+* [How do I update the javascript library dependencies to their latest versions?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-I-update-the-javascript-library-dependencies-to-their-latest-versions%3F)
+* [How do install java and maven in under 10 minutes if I don't already have them installed?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/How-do-install-java-and-maven%3F)
+* [Do you recommend a specific IDE for javascript development?](https://github.com/davidjnelson/single-page-app-boilerplate/wiki/Do-you-recommend-a-specific-IDE-for-javascript-development%3F)
 
 Have A Question, Found A Bug, Idea For A New Feature, Or Want To Follow Me On Twitter?
 --------------------------------------------------------------------------------------
 
-* Questions: [Post it to the AgileJS google group](https://groups.google.com/forum/#!forum/agilejs)
-* Found A Bug: [Create A New Issue](https://github.com/davidjnelson/agilejs/issues/new)
-* Idea For A New Feature: [Create A New Issue](https://github.com/davidjnelson/agilejs/issues/new)
+* Found A Bug: [Create A New Issue](https://github.com/davidjnelson/single-page-app-boilerplate/issues/new)
+* Idea For A New Feature: [Create A New Issue](https://github.com/davidjnelson/single-page-app-boilerplate/issues/new)
 * Follow Me On Twitter: [@david_j_nelson](https://twitter.com/david_j_nelson)
