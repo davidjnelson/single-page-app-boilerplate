@@ -2,6 +2,13 @@ Single Page App Boilerplate
 ===========================
 
 Single Page App Boilerplate allows you to easily and quickly create single page javascript applications using best practices such as test driven development, javascript dependency management, automated builds, and (coming soon) continuous deployment. 
+
+Sponsored By
+------------
+
+[Copy the Shrug Emoji](https://copyshrugemoji.com)
+==================================================
+
 Goals
 -----
 
